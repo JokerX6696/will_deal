@@ -21,6 +21,6 @@ print("变量在全局变量中初始地址为: " + str(id(v_l)))
 t_l = test_list(v_l)
 print("变量在函数内经过函数重新赋值后外部变量为: ",end='')
 print(v_l)
-
+ 
 
 
