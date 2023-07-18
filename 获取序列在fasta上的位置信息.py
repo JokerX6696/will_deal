@@ -21,7 +21,7 @@ with open('genome.fa', 'r') as f:
             All = All + line
         else:
             All = All + line.replace('\n', "")
-f.close
+
 All = All.split('\n')
 counts = 0
 for i in All:
