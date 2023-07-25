@@ -3,7 +3,7 @@ install.packages("biomaRt")
 library(biomaRt)
 
 # 连接到Ensembl数据库
-ensembl = useMart("ensembl", dataset = "hsapiens_gene_ensembl")
+ensembl = useMart("ensembl", dataset = "hsapiens_gene_ensembl")  # 目前该步骤失败 证书过期 待研究
 
 # 获取COG功能注释
 cog_annotations <- getBM(attributes=c("ensembl_gene_id", "cog_id", "cog_description"),
